@@ -1,5 +1,6 @@
+<form method="POST" action="figures/<%=@figure.id%>">
+<input id="hidden" type="hidden" name="_method" value="patch">
 <h1> Create a new Figure </h1>
-<form action='/figures' method="POST">
   <input type="text" name="figure[name]" id="figure_name">
 
     <%@landmarks.each do |landmark|%>
